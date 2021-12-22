@@ -1,2 +1,1 @@
-# rsschool-cv
-cv task for rsschool
+https://WayyzOP.github.io/rsschool-cv/cv
