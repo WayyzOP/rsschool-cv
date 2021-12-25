@@ -18,14 +18,14 @@ HTML markup specialist (october 2019 - june 2021)\
 
 ## **Code Examples**
 * Codewars [task](https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript)
-```javascript
+```js
 function multiply(a, b){
   return a * b;
 }
 ```
 
 * Codeforces [task](https://codeforces.com/contest/271/problem/A)
-```javascript
+```js
 var year = Number(readline());
  
 function getYear(year) {
