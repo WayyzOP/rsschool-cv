@@ -56,7 +56,7 @@ print(res);
 ```
 
 ## **Projects**
-* *[CV Markdown]()*
+* *[CV Markdown](https://wayyzop.github.io/rsschool-cv/cv)*
 
 
 
