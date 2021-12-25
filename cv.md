@@ -13,7 +13,7 @@ English level - B1.
     * *Sociology of Marketing*
 
 ## **Work Expirience**
-* HTML markup specialist (october 2019 - june 2021)
+HTML markup specialist (october 2019 - june 2021)\
 *Editing forms (checks, contracts, nomenclatures, commercial offers) and mailing samples using HTML5, CSS3 and twig in retailCRM*
 
 ## **Code Examples**
