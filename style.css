@@ -1,0 +1,19 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.header {
+    background-color: #648BFF;
+    width: 100%;
+    height: 5%;
+}
+
+.footer {
+    background-color: #648BFF;
+    width: 100%;
+    height: 5%;
+}
+
+.cv-name {
+
+}
