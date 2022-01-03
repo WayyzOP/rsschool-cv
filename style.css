@@ -1,19 +1,165 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
     background-color: #648BFF;
     width: 100%;
+    max-width: 1440px;
+    margin: auto;
     height: 5%;
 }
 
-.footer {
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list:last-child {
+    padding-right: 15px;
+}
+
+.nav-item {
+    padding-left: 24px;
+    line-height: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    color: #FFF3A5;
+}
+
+.main .container {
+    background-color: #EAEFFF;
+}
+
+.person-info {
+    display: flex;
+    justify-content: center;
+}
+
+.cv-photo-block {
+    width: 50%;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+.cv-photo {
+    width: 250px;
+}
+
+.cv-owner-name {
+    width: 50%;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    line-height: 250%;
+}
+
+.cv-name {
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+.cv-profession {
+    font-size: 100%;
+}
+
+.chapters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.chapter {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.line {
+    width: 98%;
+}
+
+.chapters h1 {
+    font-size: 27px;
+    padding-left: 10px;
+}
+
+.chapters h2 {
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 8px;
+}
+
+.italic {
+    font-style: italic;
+    padding-left: 30px;
+}
+
+.about-me .info {
+    padding-left: 20px;
+}
+
+.code-examples a {
+    text-decoration: none;
+    color: #648BFF;
+}
+
+.code-examples pre {
+    background-color: #F6F8FA;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #648BFF;
+}
+
+.footer .container {
     background-color: #648BFF;
     width: 100%;
     height: 5%;
 }
 
-.cv-name {
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
 
+.footer-links img {
+    height: 50px;
+}
+
+.footer span {
+    margin-top: auto;
+    margin-bottom: auto;
 }
