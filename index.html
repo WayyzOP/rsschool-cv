@@ -6,21 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code-examples">Code Examples</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="main">
-        <div class="person-info">
-            <div class="cv-photo-block"><img class="cv-photo" src="photo.jpg" alt="CV Photo"></div>
-            <div class="cv-owner-name">
-                <span class="cv-name">Dmitry Medvedev</span>
-                <br>
-                <span class="cv-profession">Junior Front-End Developer</span>
+    <main class="main">
+        <div class="container">
+            <div class="person-info">
+                <div class="cv-photo-block"><img class="cv-photo" src="./assets/photo.jpg" alt="CV Photo"></div>
+                <div class="cv-owner-name">
+                    <span class="cv-name">Dmitry Medvedev</span>
+                    <br>
+                    <span class="cv-profession">Junior Front-End Developer</span>
+                </div>
+            </div>
+
+            <hr class="line" size="2" noshade color="#A6BCFF">
+
+            <div class="chapters">
+
+                <div class="about-me chapter" id="about-me">
+                    <h1>About Me</h1>
+                    <div class="info">
+                        Looking forward to become an excellent front-end developer.<br>
+                        Interested in IT and coding for past few years. Tried different programming languages and finaly came to JS and front-end development.<br>
+                        Currently studying at Rolling Scopes School.
+                    </div>
+                    <h2>
+                        Soft skills
+                    </h2>
+                    <ul>
+                        <li>Adaptability</li>
+                        <li>Positivity</li>
+                        <li>Communication</li>
+                        <li>Punctuality</li>
+                        <li>Results-oriented</li>
+                    </ul>
+                    <h2>
+                        Languages
+                    </h2>
+                    <ul>
+                        <li>Russian - native</li>
+                        <li>English - B1</li>
+                    </ul>
+                </div>
+
+                <hr class="line" size="2" noshade color="#A6BCFF">
+
+                <div class="education chapter" id="education">
+                    <h1>Education</h1>
+                    <ul>
+                        <li>
+                            State University of Management (BA, 2015 - 2019)<br>
+                            <span class="italic">- Sociology and Psychology of Management</span>
+                        </li>
+                        <li>
+                            Moscow State University of Design and Technology (MA, 2019 - current)<br>
+                            <span class="italic">- Sociology of Marketing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="line" size="2" noshade color="#A6BCFF">
+
+                <div class="work-experience chapter" id="work-experience">
+                    <h1>Work Experience</h1>
+                    <ul>
+                        <li>
+                            HTML markup specialist (october 2019 - june 2021)<br>
+                            <span class="italic">- Editing forms (checks, contracts, nomenclatures, commercial offers) and mailing samples using HTML5, CSS3 and twig in retailCRM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="line" size="2" noshade color="#A6BCFF">
+
+                <div class="code-examples chapter" id="code-examples">
+                    <h1>Code Examples</h1>
+                    <ul>
+                        <li>Codewars <a href="https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript" target="_blank">task</a></li>
+                    </ul>
+                        <pre>
+    <code class="code-style">
+    function multiply(a, b){
+        return a * b;
+        }
+    </code>
+                        </pre>
+                    <ul>
+                    <li>Codeforces <a href="https://codeforces.com/contest/271/problem/A" target="_blank">task</a></li>
+                    </ul>
+                    <pre>
+                        <code class="code-style">
+    var year = Number(readline());
+
+    function getYear(year) {
+        if (year >= 1987 && year <= 2012) {
+            return '2013';
+        }
+        
+        year += 1;
+        
+        var yearSorted = String(year).split('').sort();
+        
+        for (var i = 0; i < yearSorted.length - 1; i++) {
+            if (yearSorted[i] == yearSorted[i + 1]) {
+                return getYear(year);
+            } else {
+                if (i == yearSorted.length - 2) {
+                    return year;
+                }
+            }
+        }
+        
+    }
+        
+    var res = getYear(year);
+    print(res);
+                        </code>
+                    </pre>
+                </div>
+
+                <hr class="line" size="2" noshade color="#A6BCFF">
+                
+                <div class="projects chapter" id="projects">
+                    <h1>Projects</h1>
+                    <ul>
+                        <li class="li-italic"><a href="https://wayyzop.github.io/rsschool-cv/cv" target="_blank">CV Markdown</a></li>
+                    </ul> 
+                </div>
+
+                <hr class="line" size="2" noshade color="#A6BCFF">
+                
+                <div class="contact chapter" id="contact">
+                    <h1>Contact</h1>
+                    <ul>
+                        <li>E-mail: medvedevdmitry98@mail.ru</li>
+                        <li>Phone: +7 (962) 964-98-65</li>
+                        <li>RS-School Discord: Wayyz (@WayyzOP)</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <div class="footer"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/WayyzOP" target="_blank"><img class="footer-section gh-logo" src="./assets/gh-logo.png" alt="GitHub"></a>
+                <span>2022</span>
+                <a href="https://rs.school/js/" target="_blank"><img class="footer-section rsschool-logo" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
